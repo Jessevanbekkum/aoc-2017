@@ -1,6 +1,7 @@
 package util
 
 import java.io.File
+import java.nio.charset.StandardCharsets
 
 fun parseListOfListOfNumbers(filename: String): List<List<Int>> {
     val bufferedReader = File(filename).bufferedReader()
@@ -10,6 +11,9 @@ fun parseListOfListOfNumbers(filename: String): List<List<Int>> {
     return lineList;
 }
 
+fun readLines(filename: String): List<String> {
+    return File(filename).readLines(StandardCharsets.UTF_8);
+}
 fun parseSingleString(filename: String):String{
     return File(filename).readText()
 }
