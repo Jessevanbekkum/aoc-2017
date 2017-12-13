@@ -20,26 +20,19 @@ fun read(path: String): Int {
             if (find.isEmpty()) {
                 groups.add(subgroup)
             } else {
-                find.forEach{ it.addAll(subgroup)}
+                find.forEach { it.addAll(subgroup) }
             }
 
             val newGroup = find.flatten().toMutableSet()
-     groups =         groups.filter { g -> (g intersect newGroup).isEmpty()}.toMutableSet()
+            groups = groups.filter { g -> (g intersect newGroup).isEmpty() }.toMutableSet()
             groups.add(newGroup)
-//            val filter = groups.filter { g ->
-//                !(g intersect currentGroup).isEmpty()
-//            }
-//
-//            if (filter.size > 1) {
-//                filter[0].addAll(filter.flatten().toSet())
-//                groups.removeAll(filter.drop(1))
-//            }
+
 
         }
     }
 
     println(groups)
-println(groups.filter { g -> !g.isEmpty() }.size)
+    println(groups.filter { g -> !g.isEmpty() }.size)
 
     return groups.find { g -> g.contains(0) }!!.size
 }
