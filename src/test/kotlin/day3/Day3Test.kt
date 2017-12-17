@@ -7,7 +7,7 @@ import io.kotlintest.matchers.shouldHave
 import io.kotlintest.specs.StringSpec
 import io.kotlintest.matchers.*
 
-class MyTests : StringSpec() {
+class Day3Test : StringSpec() {
     init {
         "Ring 0" {
             ringSize(0) shouldBe 1

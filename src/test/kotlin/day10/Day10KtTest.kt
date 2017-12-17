@@ -13,8 +13,8 @@ class Day10KtTest : StringSpec() {
         }
 
 
-        "Example" {
-            doit(256, listOf(230,1,2,221,97,252,168,169,57,99,0,254,181,255,235,167)) shouldBe 12
+        "Puzzle 1" {
+            doit(256, listOf(230,1,2,221,97,252,168,169,57,99,0,254,181,255,235,167)) shouldBe 2928
         }
 
     }

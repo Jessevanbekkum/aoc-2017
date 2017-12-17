@@ -1,7 +1,7 @@
 package day7
 
 
-fun exercise1(filename: String):String {
+fun day7_1(filename: String):String {
     val lines = util.readLines(filename);
 
     val regex = Regex("([a-z]*) \\((\\d*)\\) -> ([a-z, ]*)").toPattern()
@@ -25,7 +25,7 @@ fun exercise1(filename: String):String {
 val weightMap = HashMap<String, Int>()
 val childrenMap = HashMap<String, List<String>>()
 
-fun exercise2(filename: String):String {
+fun day7_2(filename: String):String {
     val lines = util.readLines(filename);
 
     val regex = Regex("([a-z]*) \\((\\d*)\\) -> ([a-z, ]*)").toPattern()

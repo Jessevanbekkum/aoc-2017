@@ -3,7 +3,7 @@ package day2
 import io.kotlintest.matchers.shouldBe
 import io.kotlintest.specs.StringSpec
 
-class MyTests : StringSpec() {
+class Day2Test : StringSpec() {
     init {
 
         "Example 1" {
