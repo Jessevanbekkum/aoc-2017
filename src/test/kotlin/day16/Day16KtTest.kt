@@ -7,7 +7,7 @@ class Day16KtTest : StringSpec() {
     init {
 
         "Example" {
-            day16_1("src/main/resources/day16/example.txt", 5) shouldBe "baedc"
+            day16_1("src/main/resources/day16/example.txt.txt", 5) shouldBe "baedc"
         }
 
         "Puzzle1" {
@@ -15,7 +15,7 @@ class Day16KtTest : StringSpec() {
         }
 
         "Puzzle2" {
-            day16_2("src/main/resources/day16/example.txt", 5, 2) shouldBe "ceadb"
+            day16_2("src/main/resources/day16/example.txt.txt", 5, 2) shouldBe "ceadb"
         }
 
 

@@ -8,7 +8,7 @@ import org.junit.Assert.*
 class Day12KtTest  : StringSpec() {
     init {
         "Example" {
-            read("src/main/resources/day12/example.txt") shouldBe 6
+            read("src/main/resources/day12/example.txt.txt") shouldBe 6
         }
 
         "Puzzle" {

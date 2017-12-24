@@ -19,9 +19,5 @@ class Day17KtTest : StringSpec() {
         "Puzzle 2" {
             day17_2(328) shouldBe 2316253
         }
-
-        "Albert" {
-            albert(328)
-        }
     }
 }
